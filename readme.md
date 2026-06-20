@@ -36,7 +36,7 @@ Visual Studio Code memerlukan ekstensi khusus untuk mendukung pengembangan aplik
 4. Lakukan pencarian dengan kata kunci **Extension Pack for Java** (pastikan ekstensi tersebut dipublikasikan oleh Microsoft).
 5. Klik **Install** pada ekstensi tersebut.
 
-## 4. Mengkloning Repositori (Git Clone)
+<!-- ## 4. Mengkloning Repositori (Git Clone)
 
 Langkah ini digunakan untuk mengunduh kode sumber proyek langsung dari repositori GitHub menggunakan fitur internal VS Code.
 
@@ -45,14 +45,30 @@ Langkah ini digunakan untuk mengunduh kode sumber proyek langsung dari repositor
 3. Salin dan tempel URL repositori proyek ini ke dalam kolom yang disediakan (URL: `https://github.com/ifanhaqq/PerhitunganPenjualan`), lalu tekan **Enter**.
 4. Jendela _File Explorer_ akan terbuka. Pilih direktori lokal di komputer Anda sebagai tempat penyimpanan folder proyek, lalu klik **Select Repository Location**.
 5. Setelah proses pengunduhan selesai, akan muncul notifikasi di sudut kanan bawah layar. Klik **Open** untuk memuat folder proyek.
-   _(Jika muncul kotak dialog keamanan terkait kepercayaan terhadap pembuat berkas, pilih **Yes, I trust the authors**)._
+   _(Jika muncul kotak dialog keamanan terkait kepercayaan terhadap pembuat berkas, pilih **Yes, I trust the authors**)._ -->
+
+## Langkah 4: Membuka dan Menjalankan Aplikasi
+
+Semuanya sudah siap! Mari kita jalankan aplikasinya.
+
+1. Di dalam VS Code, klik menu **File** di sudut kiri atas, lalu pilih **Open Folder...**
+2. Cari dan pilih folder proyek ini (folder yang berisi kode Anda), lalu klik **Select Folder**.
+   _(Jika muncul peringatan "Do you trust the authors...", klik **Yes, I trust the authors**)._
+3. **Tunggu sejenak:** Perhatikan pojok kanan bawah layar VS Code. VS Code sedang membaca proyek Anda dan mengunduh kebutuhan file secara otomatis (biasanya ada ikon _loading_ atau tulisan _Syncing project_). Tunggu sampai muncul tanda jempol (👍) atau tulisan _Ready_.
+4. **Buka file utama:**
+   - Di panel sebelah kiri, buka folder `src` ➔ `main` ➔ `java` ➔ `com` ➔ `penjualan`.
+   - Klik file bernama **`App.java`**.
+5. **Jalankan Aplikasi:**
+   - Di dalam kode file `App.java`, cari baris kode yang bertuliskan `public static void main(String[] args)`.
+   - Tepat di atas baris tersebut, akan muncul tulisan kecil yang bisa diklik berbunyi **Run | Debug**.
+   - Klik **Run**.
 
 ## 5. Menjalankan Aplikasi
 
-Setelah repositori berhasil dikloning dan dibuka, aplikasi dapat langsung dijalankan.
+Setelah folder berhasil, aplikasi dapat langsung dijalankan.
 
-1. Perhatikan bilah status di sudut kanan bawah antarmuka VS Code. Tunggu proses sinkronisasi proyek dan pengunduhan dependensi Maven selesai secara otomatis (ditandai dengan indikator sinkronisasi yang berubah menjadi ikon siap/selesai).
-2. Buka panel _Explorer_ di bilah sisi kiri, kemudian navigasikan ke struktur folder berikut:
+1. Perhatikan pop up status di sudut kanan bawah antarmuka VS Code. Tunggu proses sinkronisasi proyek dan pengunduhan dependensi Maven selesai secara otomatis (ditandai dengan indikator sinkronisasi yang berubah menjadi ikon siap/selesai).
+2. Buka panel _Explorer_ di sidebar sisi kiri, kemudian navigasikan ke struktur folder berikut:
    `src` ➔ `main` ➔ `java` ➔ `com` ➔ `penjualan`
 3. Pilih dan buka berkas **`App.java`**.
 4. Temukan deklarasi metode utama di dalam kode tersebut, yaitu:
